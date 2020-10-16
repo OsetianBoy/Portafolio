@@ -19,12 +19,12 @@ body{
 
 h1 {
     text-shadow: 0 0 30px #fff;
-    color: rgba(29, 21, 12, 0.767);
+    color: rgba(29, 21, 12, 0.863);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
 button {
-    background-color: rgba(102, 51, 153, 0.568);
+    background-color: rgba(17, 9, 26, 0.568);
     border: none;
     color: white;
     position: fixed;
@@ -32,6 +32,9 @@ button {
     right: 20px;
     padding: 1rem;
     transition: transform 0.3s ease-in-out;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 30px whitesmoke;
 }
 
 button.active {
@@ -39,7 +42,7 @@ button.active {
 }
 
 nav {
-    background-color: rgba(102, 51, 153, 0.568);
+    background-color: rgba(17, 9, 26, 0.568);
     position: fixed;
     top: 0;
     right: 0;
@@ -48,13 +51,12 @@ nav {
     transform: translateX(100%);
     list-style: none;
     line-height: 3ex;
-    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0 5px 5px 3px rgba(92, 91, 91, 0.25);
 }
 
 nav.active {
-    transform: translateX(0)
-;}
+    transform: translateX(0);
+}
 
 nav ul {
     padding: 0;
@@ -69,4 +71,8 @@ nav ul li {
 nav a{
     color: white;
     text-decoration: none;
+}
+
+ul li:hover a{
+    color: rgb(177, 82, 177);
 }
